@@ -1,0 +1,100 @@
+.container {
+  background-image: url(../images/bg--img.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0 3000px rgba(0, 0, 0, 0.4) inset;
+  // width: 100%;
+  // border: 1px red solid;
+  height: 600rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+
+  &__themes {
+    // border: 1px red solid;
+    height: 400rem;
+    max-width: 480rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    h1 {
+      grid-row: 1/2;
+      font-size: 40rem;
+      color: var(--light);
+      font-weight: bold;
+      text-align: center;
+      height: 60rem;
+      width: 250rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      // border: 1px red solid;
+      margin-bottom: 5rem;
+      letter-spacing: 1.25rem;
+    }
+    h2 {
+      grid-row: 2/3;
+      text-align: center;
+      color: var(--light);
+      font-size: 25rem;
+      font-family: "Montserrat", sans-serif;
+      height: 60rem;
+      width: 250rem;
+      // border: 1px red solid;
+      padding: 5rem;
+      margin-bottom: 10rem;
+      letter-spacing: 1rem;
+    }
+    p {
+      grid-row: 3/4;
+      text-align: center;
+      color: var(--light);
+      font-size: 14rem;
+      font-family: "Montserrat", sans-serif;
+      height: 70rem;
+      width: 350rem;
+      margin-top: 10rem;
+      // border: 1px red solid;
+      text-align: center;
+      letter-spacing: 1rem;
+    }
+    &__btn-Feature {
+      width: 200rem;
+      height: 50rem;
+      background-color: red;
+      border: 1px var(--delta) solid;
+      border-radius: 5px;
+    }
+  }
+  @include respond-to("small") {
+    &__themes {
+      // border: 1px red solid;
+      height: 500rem;
+      width: 800rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5rem;
+    }
+    h1 {
+      font-size: 70rem;
+      width: 450rem;
+      font-weight: 700;
+      margin-top: 50rem;
+    }
+    h2 {
+      font-size: 60rem;
+      width: 600rem;
+      letter-spacing: 5rem;
+      margin-top: 20rem;
+    }
+    p {
+      width: 700rem;
+      font-size: 20rem;
+      margin-top: 50rem;
+    }
+  }
+}

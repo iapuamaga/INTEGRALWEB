@@ -1,0 +1,47 @@
+.buttons {
+  height: 150rem;
+  width: 250rem;
+  // border: 1px red solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+
+  &__Feature {
+    width: 200rem;
+    height: 40rem;
+    background-color: transparent;
+    border: 1px var(--delta) solid;
+    color: var(--light);
+    margin: 10rem auto 10rem auto;
+    font-family: "Montserrat", sans-serif;
+    padding: 10rem;
+    font-size: medium;
+    border-radius: 5rem;
+  }
+
+  &__Download {
+    width: 210rem;
+    height: 40rem;
+    background-color: #0693e3;
+    border: 1px var(--delta) solid;
+    color: var(--light);
+    margin: 0rem auto 10rem auto;
+    padding: 10rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: medium;
+    letter-spacing: 1rem;
+    border-radius: 5rem;
+  }
+  @include respond-to("small") {
+    width: 450rem;
+    height: 60rem;
+    flex-direction: row;
+    margin-top: 40rem;
+
+    &__Download,
+    &__Feature {
+      margin: 10rem auto 10rem auto;
+    }
+  }
+}
